@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "WebViewController.h"
 
-#define kAPP_KEY           @"1888308901"
-#define kAPP_SECRET        @"b6d45a83f2ba9827ffa92766289461f8"
-#define kCALL_BACK_PAGE    @"http://kiddkai.github.com"
-#define kAUTHORIZE_URL     @"https://api.weibo.com/oauth2/authorize"
+#define kAPP_KEY
+#define kAPP_SECRET        
+#define kCALL_BACK_PAGE    
+#define kAUTHORIZE_URL     
 
 @protocol OAuthFetcherDelegate ;
 @interface OAuthFetcher : NSObject<WebViewControllerDelegate>
