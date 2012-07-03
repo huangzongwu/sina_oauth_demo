@@ -1,4 +1,4 @@
-## 一个基于 oauth2 协议的 sina 微博demo
+## 一个基于 oauth2 协议的 sina 微博demo ##
 
 使用的时候把OAuthFetcher的 define位置把你自己的回调页面，app key，app secret还有认证api地址加上就行了。
 
@@ -14,13 +14,13 @@
 
 ---------------------------------------
 
-## 使用的其他开源库
+## 使用的其他开源库 ##
 
 1. ASIHttpRequest                    [用来进行http通信]
 2. JSONKit                           [用来解析json格式信息]
 3. EGOTableViewPullRefresh           [下拉刷新，这个也挺常用吧]
 
-## 联系我：
+联系我：
 	
 	邮箱: kiddkai@gmail.com
 	qq:  156789754
