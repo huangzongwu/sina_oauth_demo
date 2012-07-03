@@ -7,13 +7,14 @@
 //
 
 #import "SinaOauthAppDelegate.h"
-
+#import "RootViewController.h"
 @implementation SinaOauthAppDelegate
 
 @synthesize window = _window;
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
+@synthesize tabController = _tabController;
 
 - (void)dealloc
 {
@@ -28,8 +29,25 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+//    RootViewController *rootController = [[RootViewController alloc] 
+//                                          initWithNibName:@"RootViewController" 
+//                                          bundle:nil];
+//    
+//    UINavigationController *navController = [[UINavigationController alloc] 
+//                                             initWithRootViewController:rootController];
+//    
+//    [self.window setRootViewController:navController];
+    
+    
+    [[NSBundle mainBundle] loadNibNamed:@"MainViewController" owner:self options:nil];
+    
+    [self.window setRootViewController:_tabController];
     self.window.backgroundColor = [UIColor whiteColor];
+    
     [self.window makeKeyAndVisible];
+    
+//    [rootController release];
+//    [navController release];
     return YES;
 }
 

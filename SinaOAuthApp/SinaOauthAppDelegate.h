@@ -10,6 +10,7 @@
 
 @interface SinaOauthAppDelegate : UIResponder <UIApplicationDelegate>
 
+#pragma mark - base
 @property (strong, nonatomic) UIWindow *window;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
@@ -18,5 +19,9 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+
+
+#pragma mark - customize
+@property (retain, nonatomic) IBOutlet UITabBarController *tabController;
 
 @end
